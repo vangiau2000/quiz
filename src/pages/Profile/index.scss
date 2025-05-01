@@ -1,0 +1,13 @@
+.login__cancel {
+  display: flex;
+  border: solid;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  padding: 8px 50px;
+  &:hover {
+    background: rgb(32, 30, 30) ;
+    color:white
+  }
+}

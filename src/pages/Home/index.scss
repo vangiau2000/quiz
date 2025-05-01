@@ -1,0 +1,108 @@
+.main {
+  padding-top: 50px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  &--title {
+    font-size: 50px;
+    // font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+  }
+  &--search {
+    border: solid;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    border-radius: 11px;
+    overflow: hidden;
+  }
+  span {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 28px;
+  }
+
+  input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+  }
+}
+
+// result.map(item => (
+//               <div className="content--item">
+//                 <div className="content--content">
+//                   <h3>{item.name}</h3>
+//                   <p>{item.description}</p>
+//                 </div>
+//                 <div className="content--button">
+//                 <Link to={"/answer"}>Bắt đầu làm.</Link>
+//                 </div>
+
+.content {
+  &--title {
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+  &--item {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 17px;
+  }
+
+  &--inf {
+    h3 {
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+  &--button {
+    display: flex;
+    align-items: center;
+    &--save,
+    &--start {
+      padding: 10px;
+      text-decoration: none;
+      background: white;
+      color: black;
+      border: solid 1px black;
+      border-radius: 12px;
+      margin-left: 10px;
+      cursor: pointer;
+      &:hover {
+        background: black;
+        color: white;
+      }
+    }
+    &--start {
+      &:hover a {
+        color: white;
+      }
+    }
+  }
+}
+// a {
+//   padding: 10px;
+//   text-decoration: none;
+//   background: #3b4047;
+//   color: white;
+//   border-radius: 12px;
+//   margin-left: 10px;
+//   &:hover {
+//     background: #212327;
+//   }
+// }

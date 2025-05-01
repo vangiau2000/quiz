@@ -1,0 +1,114 @@
+// .answer {
+//   // display:flex;
+//   // background: #F8F7F7;
+//   // justify-content: center;
+//   // padding: 50px 0 0 0 ;
+//   // height: 100vh;
+//   // text-align: center;
+// }
+
+// .answer {
+//   display: flex;
+//   justify-content: center; /* căn giữa theo chiều ngang */
+//   background: #f8f7f7;
+//   height: 100vh;
+//   width: 100%;
+//   padding-top: 150px;
+//   table {
+//     border-collapse: collapse;
+//     border: 1px solid #cad1db;
+//     background: white;
+//     border-radius: 5px;
+//     tr {
+//       th, td {
+//         padding: 10px 20px;
+//         text-align: left;
+//         border-bottom: 1px solid #e0e0e0;
+//       }
+//     }
+
+//     tr:last-child td {
+//       border-bottom: none; // xoá viền cuối
+//     }
+//   }
+
+// }
+
+.answer {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  font-family: "Inter", sans-serif;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #cad1db;
+
+    thead {
+      th {
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 1rem;
+        background-color: #f9f9f9;
+        color: #333;
+        padding-left: 50px;
+      }
+    }
+  
+
+    tbody {
+      tr {
+        transition: background-color 0.2s ease;
+        border-bottom: 1px solid #eee;
+
+        &:hover {
+          background-color: #fafafa;
+        }
+        td:nth-child(2) {
+          text-align: right;
+          padding-left: 0;
+        }
+        td {
+          padding: 1rem;
+          vertical-align: middle;
+          padding-left: 50px;
+
+          .answer__name {
+            font-weight: 500;
+            color: #222;
+          }
+
+          .answer__icon {
+            color: #e74c3c;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.2s ease;
+
+            &:hover {
+              color: #c0392b;
+            }
+          }
+
+          button {
+            padding: 0.5rem 1rem;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            border: 1px solid black;
+            &:hover {
+              background-color: black;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

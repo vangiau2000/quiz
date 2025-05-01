@@ -1,0 +1,92 @@
+.question {
+  display: flex;
+  &__title {
+    margin: 10px 0;
+    padding: 10px;
+    font-weight: 500;
+  }
+  &__sider {
+    width: 200px;
+    padding: 10px;
+    border-right: 1px solid #e2e8f0;
+    height: 100vh;
+  }
+  &__main {
+    flex:1
+  }
+  &__button {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+    // a.active {
+    //   // background-color: #cbd5e1;
+    //   background: red;
+    // }
+    &:hover {
+      background-color: #cbd5e1;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+.quest {
+  padding: 30px;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e2e8f0; 
+    border-radius: 7px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  &__inf {
+    width: 40%;
+    
+  }
+  &__name, &__desc {
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__desc {
+    font-size: 16px;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__start {
+    border: 1px solid #e2e8f0; 
+    padding: 7px;
+    border-radius: 7px;
+    // background: #1e1e1f;
+    // color: white;
+  }
+  &__delete, &__down {
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    border: 1px solid #e2e8f0;
+    border-radius: 7px; 
+  }
+  &__selectPublic {
+    select {
+      padding: 6px;
+      font-size: 17px;
+      outline: none;
+      border-radius: 7px;
+    border: 1px solid #e2e8f0;
+
+    }
+  }
+  &__delete {
+    color: red;
+  }
+}
